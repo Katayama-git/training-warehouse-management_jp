@@ -13,13 +13,23 @@
 
 - このリポジトリを[Fork](https://docs.github.com/ja/get-started/quickstart/fork-a-repo)します。
 
-- ローカル上の任意の場所にリポジトリのクローンを作成します。  
-  1. `Git Bash`もしくは `terminal`を起動します。  
-  2. `cd` コマンドでリポジトリをクローンしたいフォルダに移動します。  
-  3. `git clone {リポジトリのURL}`&nbsp;を入力
-- `Fork` を[こちら](https://git-fork.com/)からインストールします。
+- `Fork`[^2]を[こちら](https://git-fork.com/)からインストールします。
   - Forkの使い方は[こちら](https://qiita.com/AyakoKataoka/items/e1b0a2a2b2c85de4c1e3)
-  - step1にbranchを切り替えておいてください
+  - インストール後は、参考サイトを見て、`GitHub`のアカウントでサインインしておいて下さい。
+
+[^2]: ここの`Fork`はGUIツールの名称を指します。`GitHub`での`Fork`は他ユーザーのリポジトリを自分のリポジトリに複製することを指します。
+
+- ローカル上の任意の場所にリポジトリのクローンを作成します。
+  - CLIでの作成方法  
+      (1) `Git Bash`もしくは `terminal`を起動します。  
+      (2) `cd` コマンドでリポジトリをクローンしたいフォルダに移動します。  
+      (3) `git clone {リポジトリのURL}`&nbsp;を入力し、Enterを押します。
+  
+  - `Fork`アプリでの作成方法(こちらが簡単です)  
+      (1) 左上のFileをクリックし、Accounts...をクリックします。  
+      (2) Repositoryタブを開くと、自分のリポジトリの一覧が表示されます。  
+      (3) training-warehouse-management_jpの下向き矢印をクリックして下さい。  
+      (4) Parent Folderでクローンを作成する場所を選択し、Cloneをクリックします。
 
 ### Javaのインストール・環境変数の設定
 
@@ -51,7 +61,7 @@
 - [こちら](https://www.jetbrains.com/ja-jp/idea/download/other.html)から`Intellij IDEA Community Edition`をインストールします。
   - File -> New -> Project -> Project from existing source -> `beginner/demo/demo` -> import project from external model -> Gradleを選択 -> Create
   - files -> Project Structure -> Platform Settings -> SDKs -> 11を選択 -> OK
-  - [参考画像](https://github.com/amajakai14/training-warehouse-management/blob/step1-client-and-server/intellij.md)
+  - [参考画像](https://github.com/Git-MuramatsuT/training-warehouse-management_jp/blob/step1-client-and-server/intellij.md)
 
 - [こちら](https://code.visualstudio.com/)から`VSCode`をインストールします。
   - 下記の拡張機能をインストールしておいて下さい。
@@ -62,10 +72,10 @@
 
 ### Dockerのインストール
 
-- [こちら](https://docs.docker.com/desktop/install/windows-install/)から`Docker Desktop`[^2] をインストールします。
+- [こちら](https://docs.docker.com/desktop/install/windows-install/)から`Docker Desktop`[^3] をインストールします。
   - [参考サイト](https://www.kagoya.jp/howto/cloud/container/wsl2_docker/)
 
-[^2]: `Docker Desktop`を起動する前に、WSL Linuxカーネルを更新しなければいけない場合があります(Windows)。[こちら](https://kb.seeck.jp/archives/16956)を参考に更新してください。
+[^3]: `Docker Desktop`を起動する前に、WSL Linuxカーネルを更新しなければいけない場合があります(Windows)。[こちら](https://kb.seeck.jp/archives/16956)を参考に更新してください。
 
 - 以下の指示に従って、Dockerコンテナを起動してください。
    1. `Git Bash`もしくは `terminal`を起動します。
