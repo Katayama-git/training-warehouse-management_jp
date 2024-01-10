@@ -108,14 +108,15 @@ terminalで
 `Tomcat started on port(s): 8080 (http)`
 と表示されれば、成功です。  
 ブラウザで localhost:8080/hello と入力すると、
-メッセージが表示されるはずです。
+メッセージが表示されるはずです。  
+文字化けエラーの解決方法は[こちら](https://github.com/Git-MuramatsuT/training-warehouse-management_jp/blob/step1-client-and-server/intellij.md)
 
-2. UIを表示しましょう  
+3. UIを表示しましょう  
 `VSCode`を起動 -> open -> `training-warehouse-management_jp/beginner/ui` -> `index.html`を右クリック -> Open with Live Server  
 ブラウザでHTMLファイルが開きます。  
 3つのボタンをクリックして、何が表示されるか見てみましょう。
 
-3. `index.html`と`index.js`のコードを見て、HTML, JavaScriptの基本を学びましょう。
+4. `index.html`と`index.js`のコードを見て、HTML, JavaScriptの基本を学びましょう。
 補助資料のp10~p14には、HTML及びJavaScriptの基本について書かれています。参考にしながら、`index.html`や`index.js`には、どのようなことが書かれているのかコードを解読してください。
 
 
