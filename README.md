@@ -109,7 +109,7 @@ terminalで
 と表示されれば、成功です。  
 ブラウザで localhost:8080/hello と入力すると、
 メッセージが表示されるはずです。  
-文字化けエラーの解決方法は[こちら](https://github.com/Git-MuramatsuT/training-warehouse-management_jp/blob/step1-client-and-server/intellij.md)
+文字化けエラーの解決方法は[こちら](https://github.com/Git-MuramatsuT/training-warehouse-management_jp/blob/step1-client-and-server/mojibake.md)
 
 3. UIを表示しましょう  
 `VSCode`を起動 -> open -> `training-warehouse-management_jp/beginner/ui` -> `index.html`を右クリック -> Open with Live Server  
