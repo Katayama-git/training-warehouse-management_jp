@@ -17,12 +17,13 @@ function renderMenus(menusJson) {
     }
     menus.innerHTML = "";
     const menuTable = document.createElement("table");
-    menuTable.innerHTML = "<th>Menu ID</th><th>Menu Name</th>";
+    menuTable.innerHTML = "<th>Menu ID</th><th>Menu Name</th><th>Menu Price</td>";
     menusJson.menus.forEach((menu) => {
         menuTable.innerHTML += `
         <tr>
             <td>${menu.id}</td>
             <td>${menu.name}</td>
+            <td>${menu.price}</td>
             <td>
             <button onclick="renderMenu(${menu.id})">Edit</button>
             <button onclick="handleDeleteMenu(${menu.id})">Delete</button>
@@ -39,6 +40,7 @@ async function handleRegisterMenu(event) {
     const formData = new FormData(form);
     const menu = {
         name: formData.get("name"),
+        price:formData.get("price")
     };
     
     const response = await fetch("http://localhost:8080/menus", {
@@ -73,6 +75,8 @@ async function renderMenu(id) {
         <div> Menu ID: ${menu.id}</div>
         <label for="name">Name</label>
         <input type="text" name="name" value="${menu.name}"/>
+        <label for="price">Price</label>
+        <input type="number" price="price" value="${menu.price}">
         <button type="submit" onclick="handleUpdateMenu(event, ${menu.id})">Update</button>
     </form>
     `;
@@ -86,6 +90,7 @@ async function handleUpdateMenu(event, id) {
     const formData = new FormData(form);
     const menu = {
         name: formData.get("name"),
+        price:formData.get("price")
     };
 
     const response = await fetch(`http://localhost:8080/menus/${id}`, {

@@ -1,7 +1,6 @@
 package com.excellence.demo.datasource;
 
 import com.excellence.demo.model.ExampleMenu;
-import com.excellence.demo.model.ExampleOrder;
 import com.excellence.demo.repository.MenuRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -19,7 +18,7 @@ public class MenuDatasource implements MenuRepository {
 
     @Override
     public List<ExampleMenu> getAllMenu() {
-        String sql = "SELECT * FROM Example_menu";
+        String sql = "SELECT * FROM Example_menu Order By Id";
         List<Map<String, Object>> records = jdbcTemplate.queryForList(sql);
         return records.stream()
                 .map(record -> toModel(record))
@@ -65,6 +64,7 @@ public class MenuDatasource implements MenuRepository {
         return new ExampleMenu(
                 (int) record.get("id"),
                 (String) record.get("name")
+
         );
     }
 }

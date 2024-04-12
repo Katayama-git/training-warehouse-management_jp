@@ -11,9 +11,9 @@ VALUES
 ,(2, 'PO-002', 2, 'PENDING', '2022-01-01')
 ,(3, 'PO-003', 3, 'PENDING', '2022-01-01')
 ;
-INSERT INTO example_menu (id, name) VALUES
-(1, 'carrot')
-,(2, '玉ねぎ')
-,(3, '和牛')
+INSERT INTO example_menu (id, name,price) VALUES
+(1, 'carrot',75)
+,(2, '玉ねぎ',35)
+,(3, '和牛',198)
 ;
 

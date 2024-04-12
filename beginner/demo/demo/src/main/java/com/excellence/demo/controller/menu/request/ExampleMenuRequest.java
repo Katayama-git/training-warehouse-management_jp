@@ -7,12 +7,12 @@ public class ExampleMenuRequest {
 
     public final String name;
 
+
     public ValidateResult validate() {
-        if (name.equals("")) return ValidateResult.failed("name can't be empty");
+        if (name.isEmpty()) return ValidateResult.failed("name can't be empty");
 
         return ValidateResult.success();
     }
-
     public ExampleMenu toExampleMenu() {
         return toExampleMenu(0);
     }
