@@ -16,7 +16,7 @@ Dockerが起動していなければ、起動させておきましょう。
 データベースの中身を見るために、`PGAdmin4`というGUIツールを利用します。
 
 - [こちら](https://www.pgadmin.org/download/)から`PGAdmin4`をインストールします。
-  - [インストール方法](https://qiita.com/pyon_kiti_jp/items/01d6150e46bd66be29f0)
+  <!--- [インストール方法](https://qiita.com/pyon_kiti_jp/items/01d6150e46bd66be29f0)-->
 
 - インストール後
   - Serversを右クリック -> Register -> Server...
