@@ -17,14 +17,7 @@ async function helloFromJava() {
 
 // TODO: helloExercise()を完成させて、サーバーからのメッセージをアラートで表示する
 async function helloExercise() {
-    const response = await fetch("http://localhost:8080/exercise");
-    if(!response.ok){
-        alert("Something wrong! Have you run the server yet?");
-        return;
-    }
-    console.log(response,"response");
-    const text = await response.text();
-    alert(text);
+    alert("wrong");
 }
 
 const box = 1;                 //constで定数boxを宣言し、1という数値の値を代入する。
