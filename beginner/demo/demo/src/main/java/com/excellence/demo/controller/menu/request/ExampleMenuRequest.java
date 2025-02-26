@@ -9,7 +9,7 @@ public class ExampleMenuRequest {
 
     // TODO: nameが空白でないかを検証するvalidate()を作成する
     public ValidateResult validate(){
-        if( name == "" ){  return  ValidateResult.failed("name can't be empty"); }
+        if( name == "" ){  return  ValidateResult.failed("name can't be emptUUUUUy"); }
         return ValidateResult.success();
     }
 
